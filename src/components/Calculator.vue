@@ -105,15 +105,14 @@ export default {
 
 <style lang="scss" scoped>
 .calculator {
-  border: 1px red solid;
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
 
-  >.display {
+  .display {
     width: 100%;
-    padding: 9px 16px;
+    padding: 9px 0;
     font-size: 36px;
     text-align: right;
     font-family: Consolas, monospace;
@@ -124,6 +123,10 @@ export default {
       color: #d9d9d9;
       margin-right: 10px;
     }
+  }
+
+  .keyboard {
+    width: 100%;
   }
 
   button {

@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="calculator">
     <Calculator />
   </div>
+
 </template>
 
 <script lang="ts">
@@ -12,5 +13,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.calculator {
+  position: relative;
+  max-width: 500px;
+  margin: 25vh auto;
+}
 </style>
