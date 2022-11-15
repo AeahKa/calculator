@@ -8,8 +8,8 @@
         @click="calculate">÷</button><button @click="backSpace">Del</button> <button @click="input">4</button><button
         @click="input">5</button><button @click="input">6</button><button @click="calculate">×</button><button
         @click="clear">C</button><button @click="input">1</button><button @click="input">2</button><button
-        @click="input">3</button><button @click="calculate">-</button><button class="save">保存</button><button
-        @click="input">.</button><button @click="input">0</button><button @click="equal">=</button><button
+        @click="input">3</button><button @click="calculate">-</button><button class="equal"
+        @click="equal">=</button><button class='zero' @click="input">0</button><button @click="input">.</button><button
         @click="calculate">+</button>
     </div>
   </div>
@@ -141,6 +141,17 @@ export default {
     border: none;
     font-size: 22px;
     box-shadow: inset 0 0 2px fade-out($color: #000000, $amount: 0.9);
+
+    &.equal {
+      height: 16vh;
+      float: right;
+    }
+
+    &.zero {
+      width: 40%;
+    }
   }
+
+
 }
 </style>
